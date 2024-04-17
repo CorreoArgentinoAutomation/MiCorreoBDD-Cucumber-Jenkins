@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="130.226" tests="3" skipped="0" failures="1" errors="0">
+<testcase classname="TP - Nuevo envio individual" name="Nuevo envio individual - Example #1.1" time="44.576">
+<failure type="org.openqa.selenium.JavascriptException" message="javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression //input[@id='card_number']11 because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@id='card_number']11' is not a valid XPath expression.&quot;}
+  (Session info: MicrosoftEdge=123.0.2420.81)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [79fce2aa5e72e8ab1b2ae32864c4d4b2, findElement {using=xpath, value=//input[@id='card_number']11}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64930}, msedge: {msedgedriverVersion: 123.0.2420.97 (ba5f45140663..., userDataDir: C:\Users\MAXIMI~1.NAB\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64930/devtoo..., se:cdpVersion: 123.0.2420.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 79fce2aa5e72e8ab1b2ae32864c4d4b2">
+<![CDATA[org.openqa.selenium.JavascriptException: javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //input[@id='card_number']11 because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@id='card_number']11' is not a valid XPath expression."}
+  (Session info: MicrosoftEdge=123.0.2420.81)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [79fce2aa5e72e8ab1b2ae32864c4d4b2, findElement {using=xpath, value=//input[@id='card_number']11}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64930}, msedge: {msedgedriverVersion: 123.0.2420.97 (ba5f45140663..., userDataDir: C:\Users\MAXIMI~1.NAB\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64930/devtoo..., se:cdpVersion: 123.0.2420.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 79fce2aa5e72e8ab1b2ae32864c4d4b2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at framework.BasePage.findElement(BasePage.java:157)
+	at framework.BasePage.writeText(BasePage.java:97)
+	at page.MiCorreo1_5.PageForm.pagoConTarjeta(PageForm.java:22)
+	at page.MiCorreo1_5.PageCheckOut.medioPago(PageCheckOut.java:41)
+	at stepsDefinitions.MisEnviosOutlineSteps.realizaElPagoConDelEnvío(MisEnviosOutlineSteps.java:52)
+	at ✽.realiza el pago con 'Tarjeta' del envío(file:///C:/Users/maximiliano.nabarro/IdeaProjects/MiCorreoBDD-Cucumber-Jenkins/src/main/resources/features/1_MCIB-87.feature:16)
+]]>
+</failure>
+<system-out><![CDATA[
+Given el usuario se situa en los campos email y password....................passed
+Given el usuario 'Consumidor final' está logueado y en la page home.........passed
+When ingresa en nuevo envío individual......................................passed
+And llena los campos de paquete.............................................passed
+And selecciona el 'Domicilio' completa el formulario de destino.............passed
+And selecciona el 'Clasico' y procede a pagar...............................passed
+And se muestra la grilla de checkout........................................passed
+Then realiza el pago con 'Tarjeta' del envío................................failed
+And se confirma que el pago se ha realizado con éxito.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="TP - Nuevo envio individual" name="Nuevo envio individual - Example #1.2" time="44.366">
+<system-out><![CDATA[
+Given el usuario se situa en los campos email y password....................passed
+Given el usuario 'Monotributista' está logueado y en la page home...........passed
+When ingresa en nuevo envío individual......................................passed
+And llena los campos de paquete.............................................passed
+And selecciona el 'Sucursal' completa el formulario de destino..............passed
+And selecciona el 'Expreso' y procede a pagar...............................passed
+And se muestra la grilla de checkout........................................passed
+Then realiza el pago con 'Saldo' del envío..................................passed
+And se confirma que el pago se ha realizado con éxito.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="TP - Nuevo envio individual" name="Nuevo envio individual - Example #1.3" time="41.034">
+<system-out><![CDATA[
+Given el usuario se situa en los campos email y password....................passed
+Given el usuario 'Empresa' está logueado y en la page home..................passed
+When ingresa en nuevo envío individual......................................passed
+And llena los campos de paquete.............................................passed
+And selecciona el 'Domicilio' completa el formulario de destino.............passed
+And selecciona el 'Clasico' y procede a pagar...............................passed
+And se muestra la grilla de checkout........................................passed
+Then realiza el pago con 'Cuenta Corriente' del envío.......................passed
+And se confirma que el pago se ha realizado con éxito.......................passed
+]]></system-out>
+</testcase>
+</testsuite>
